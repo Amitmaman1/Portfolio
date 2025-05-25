@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # תוודא שזו אכן הבראנץ' שאתה עובד עליו
+      - main  
 
 jobs:
   deploy:
@@ -26,3 +26,13 @@ jobs:
           aws s3 cp script.js s3://amitmaman.online/script.js --acl public-read
           aws s3 cp styles.css s3://amitmaman.online/styles.css --acl public-read
           aws s3 cp images/ s3://amitmaman.online/images/ --recursive --acl public-read
+
+      - name: Send deployment notification via SNS
+        run: |
+          aws sns publish \
+            --topic-arn arn:aws:sns:us-east-1:692859952726:Alerts \
+            --message "Deployment to S3 bucket amitmaman.online completed successfully on branch ${{ github.ref_name }} by ${{ github.actor }}."
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
