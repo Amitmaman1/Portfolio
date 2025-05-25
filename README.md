@@ -19,5 +19,5 @@ This portfolio site serves as a professional showcase and was built with a focus
 
 ## Live Site
 
-[👉 Check it out here](amitmaman.online) 
+[👉 Check it out here](https://amitmaman.online/) 
 
