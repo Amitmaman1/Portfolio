@@ -1,19 +1,23 @@
-This is the source code for my personal portfolio website — a project I built to showcase my skills and experience.
+# Personal Portfolio Website
 
-About This Project
+This is the source code for my personal portfolio — a project I built to showcase my skills and experience.
+
+## About This Project
+
 This portfolio site serves as a professional showcase and was built with a focus on modern DevOps practices:
 
-Infrastructure as Code: I used Terraform to provision the cloud infrastructure, making the deployment scalable and repeatable.
+- **Infrastructure as Code**: Provisioned using Terraform, making the deployment scalable, consistent, and repeatable.
+- **Continuous Integration & Deployment**: GitHub Actions automatically build and deploy the site with every change.
+- **Static Website**: The site is fast, lightweight, and responsive.
 
-Continuous Integration & Deployment: The site is automatically built and deployed via GitHub Actions workflows, ensuring smooth updates with every change.
+## Tech Stack
 
-Static Website: The site itself is a clean, fast, and responsive static website.
+- **Frontend**: HTML, CSS, and JavaScript
+- **Infrastructure**: Terraform
+- **CI/CD**: GitHub Actions
+- **Hosting & DNS**: AWS (S3, CloudFront, Route 53)
 
-Tech Stack
-HTML, CSS, and JavaScript for the front end
+## Live Site
 
-Terraform for infrastructure provisioning
+[👉 Check it out here](amitmaman.online) 
 
-GitHub Actions for CI/CD automation
-
-AWS (S3, CloudFront, Route 53) for hosting and domain management
