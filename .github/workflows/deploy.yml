@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # or your deployment branch
+      - main  # תוודא שזו אכן הבראנץ' שאתה עובד עליו
 
 jobs:
   deploy:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Upload static site to S3
         run: |
-          aws s3 cp index.html s3://${{ secrets.S3_BUCKET }}/index.html --acl public-read
-          aws s3 cp script.js s3://${{ secrets.S3_BUCKET }}/script.js --acl public-read
-          aws s3 cp styles.css s3://${{ secrets.S3_BUCKET }}/styles.css --acl public-read
-          aws s3 cp images/ s3://${{ secrets.S3_BUCKET }}/images/ --recursive --acl public-read
+          aws s3 cp index.html s3://amitmaman.online/index.html --acl public-read
+          aws s3 cp script.js s3://amitmaman.online/script.js --acl public-read
+          aws s3 cp styles.css s3://amitmaman.online/styles.css --acl public-read
+          aws s3 cp images/ s3://amitmaman.online/images/ --recursive --acl public-read
