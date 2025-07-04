@@ -404,7 +404,7 @@ h1, h2, h3 {
 
 .certificate-img {
     width: 180px;
-    max-width: 90vw;
+    max-width: 220px;   /* This will never let it grow beyond 220px */
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s;
