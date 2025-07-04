@@ -403,7 +403,7 @@ h1, h2, h3 {
 }
 
 .certificate-img {
-    width: 180px;                /* Make image bigger */
+    width: 180px;
     max-width: 90vw;
     height: auto;
     border-radius: 8px;
@@ -476,5 +476,12 @@ h1, h2, h3 {
     .certificate-img {
         width: 80vw;
         max-width: 95vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .certificate-img {
+        width: 180px;
+        max-width: 220px;
     }
 }
