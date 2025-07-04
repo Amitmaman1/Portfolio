@@ -403,13 +403,13 @@ h1, h2, h3 {
 }
 
 .certificate-img {
-    width: 180px;
-    max-width: 220px;   /* This will never let it grow beyond 220px */
+    max-width: 280px;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
 }
 
 .certificate-name {
