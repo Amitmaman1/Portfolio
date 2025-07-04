@@ -369,6 +369,54 @@ h1, h2, h3 {
 .tech-item span {
     display: none;
 }
+    
+/* Certificates Section */
+.certificates {
+    padding: 6rem 0;
+    background-color: var(--background-light);
+}
+
+.certificates-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    background: var(--background-card); /* visually group the certificates */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.certificate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: transparent; /* remove card background for a single frame look */
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: none;
+    width: auto;
+}
+
+.certificate-img {
+    width: 180px;                /* Make image bigger */
+    max-width: 90vw;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    display: block;
+    margin: 0 auto;
+}
+
+.certificate-name {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -423,5 +471,10 @@ h1, h2, h3 {
 
     .about-content {
         gap: 2rem;  /* Reduce gap between image and text */
+    }
+
+    .certificate-img {
+        width: 80vw;
+        max-width: 95vw;
     }
 }
