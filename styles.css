@@ -403,19 +403,45 @@ h1, h2, h3 {
 }
 
 .certificate-img {
-    width: 180px;
-    max-width: 220px;   /* This will never let it grow beyond 220px */
+    max-width: 280px;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
 }
 
 .certificate-name {
     font-size: 1.1rem;
     color: var(--primary-color);
     font-weight: 600;
+}
+
+/* Style for the certificate "View Credential" button */
+.certificate-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    background: #111111;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.certificate-btn:hover,
+.certificate-btn:focus {
+    transform: translateY(-2px) scale(1.04);
+    color: #fff;
+    text-decoration: none;
+    outline: none;
 }
 
 /* Responsive Design */
