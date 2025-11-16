@@ -88,6 +88,26 @@ h1, h2, h3 {
     color: var(--text-muted);
 }
 
+.cv-btn {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.cv-btn:hover {
+    color: var(--text-muted);
+}
+
+.cv-btn i {
+    font-size: 1rem;
+}
+
 .mobile-menu {
     display: none;
     background: none;
@@ -448,6 +468,10 @@ h1, h2, h3 {
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+    .cv-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
     .mobile-menu {
         display: block;

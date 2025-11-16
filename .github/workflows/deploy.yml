@@ -26,6 +26,7 @@ jobs:
           aws s3 cp script.js s3://amitmaman.online/script.js --acl public-read
           aws s3 cp styles.css s3://amitmaman.online/styles.css --acl public-read
           aws s3 cp images/ s3://amitmaman.online/images/ --recursive --acl public-read
+          aws s3 cp "Amit Maman — CV.pdf" s3://amitmaman.online/"Amit Maman — CV.pdf" --acl public-read
 
       - name: Send deployment notification via SNS
         run: |
